@@ -1,0 +1,1719 @@
+span.number-font {
+    font-family: "TitilliumWeb", sans-serif;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb';
+    src: url('fonts/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/TitilliumWeb-Regular.woff') format('woff'), url('fonts/TitilliumWeb-Regular.ttf')  format('truetype'), url('fonts/TitilliumWeb-Regular.svg#TitilliumWeb-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb';
+    src: url('fonts/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/TitilliumWeb-Bold.woff') format('woff'), url('fonts/TitilliumWeb-Bold.ttf')  format('truetype'), url('fonts/TitilliumWeb-Bold.svg#TitilliumWeb-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.centered-container {
+    position: absolute;
+    width: 750px;
+    margin: auto
+}
+
+.draggable-img {
+    width: auto;
+    height: auto;
+}
+
+.dropimg {
+    width: 120px;
+    height: 120px;
+    border: 1px dashed #00b3ec;
+    display: inline-block;
+    border-radius: 8px
+}
+
+.half-size {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5)
+}
+
+.third-size {
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75)
+}
+
+.container-centered {
+    text-align: center;
+    width: 500px;
+    margin: auto
+}
+
+.table-selections tr td {
+    border: 1px solid #ccc;
+    width: 36px;
+    border-radius: 4px;
+    font-size: 32px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0
+}
+
+.td-letter-correct {
+    transition: .2s all;
+    background: #52ae19;
+    color: #fff;
+    text-decoration: none;
+    cursor: default
+}
+
+.td-letter-complete {
+    transition: .2s all;
+    text-decoration: line-through;
+    color: #ccc;
+    cursor: default
+}
+
+.sortable-letters {
+    list-style: none;
+    display: block;
+    clear: both
+}
+
+.sortable-placeholder-letter {
+    border-radius: 8px;
+    background: white;
+    cursor: url('img/hand.png'), move;
+    min-width: 50px;
+    min-height: 52px;
+    vertical-align: top;
+    line-height: 64px;
+    display: inline-block;
+    border: 2px dashed #00b3ec;
+    content: '&nbsp'
+}
+
+.sortable-letter-disabled, .sortable-letter-active {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background: white;
+    cursor: url('img/hand.png'), move;
+    min-width: 50px;
+    margin: 0 5px 0 5px;
+    display: inline-block;
+    box-shadow: 0 2px 4px #999
+}
+
+.sortable-letter-disabled {
+    cursor: default;
+    box-shadow: none;
+    transition: .8s all;
+    background: #52ae19;
+    color: #fff
+}
+
+.draggable-infinite.small {
+    font-size: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    padding: 2px
+}
+
+.draggable-infinite, .draggable {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background: white;
+    cursor: url('img/hand.png'), move;
+    min-width: 100px;
+    min-height: 70px;
+    padding: 0 .5em 0 .5em;
+    float: left;
+    margin: 10px;
+    box-shadow: 0 2px 4px #999;
+    line-height: 64px
+}
+
+.draggable-infinite.inline {
+    font-size: 24px;
+    float: none;
+    display: inline;
+    font-weight: bold;
+    margin: 0;
+    line-height: normal
+}
+
+.draggable-infinite.inline.ui-draggable.ui-draggable-dragging {
+    min-height: 20px;
+    min-width: 20px
+}
+
+.droppable-style {
+    display: inline;
+    font-weight: bold
+}
+
+.frase {
+    margin-bottom: 50px;
+    font-size: 24px;
+    display: block;
+    clear: both
+}
+
+.draggable-top {
+    position: absolute;
+    width: 440px;
+    margin-left: -220px;
+    left: 50%;
+    top: 8%;
+    text-align: center
+}
+
+.draggable-bottom {
+    position: absolute;
+    width: 740px;
+    margin-left: -370px;
+    left: 50%;
+    bottom: 12%;
+    text-align: center
+}
+
+.droppable-bottom {
+    position: absolute;
+    width: 440px;
+    margin-left: -220px;
+    left: 50%;
+    bottom: 20%
+}
+
+.droppable-column-left {
+    position: absolute;
+    width: 40px;
+    margin-right: -380px;
+    right: 50%;
+    bottom: 50%
+}
+
+.droppable-column-left .dropletter {
+    margin: 10px
+}
+
+.draggable-top .draggable {
+    font-size: 18px;
+    min-width: 70px;
+    min-height: 40px;
+    float: none;
+    display: inline-block;
+    background: rgba(255, 255, 255, .8)
+}
+
+.complete, .dropletter {
+    min-width: 100px;
+    min-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px dashed #00b3ec;
+    display: inline-block;
+    margin-bottom: -12px;
+    margin-left: 8px;
+    margin-right: 8px
+}
+
+.complete {
+    display: inline;
+    font-size: 24px;
+    padding: 6px;
+    margin: 0
+}
+
+.dropLetterOver {
+    background-color: #ffae00;
+    border: 1px dashed #ffae00
+}
+
+.complete-form {
+    display: inline
+}
+
+.completer-input {
+    text-transform: lowercase;
+    width: 42px;
+    border-radius: 8px;
+    border: 2px dashed #00b3ec;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    outline: 0;
+    text-align: center;
+    position: relative
+}
+
+.completer-input:focus {
+    border: 2px solid white
+}
+
+.cliccable-span {
+    cursor: pointer
+}
+
+.cliccable-span:hover {
+    font-weight: bold
+}
+
+.cliccable-span-right {
+    background-color: rgba(156, 220, 156, 0.3);
+    display: inline-block;
+    padding: 0 8px 0 8px;
+    border-radius: 8px
+}
+
+.centered-label {
+    font-size: 42px;
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    padding: 10px;
+    min-width: 200px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid white;
+    display: none;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1), 0 0 3px -1px rgba(0, 0, 0, .7), 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.image-label {
+    background: #fff;
+    border-radius: 16px;
+    padding: 10px;
+    position: absolute;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1), 0 0 3px -1px rgba(0, 0, 0, .7), 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.image-label.tl {
+    top: 20px;
+    left: 20px
+}
+
+.image-label.tr {
+    top: 20px;
+    right: 20px
+}
+
+.image-label.br {
+    bottom: 20px;
+    right: 20px
+}
+
+.image-label.bl {
+    bottom: 20px;
+    left: 20px
+}
+
+.dropped {
+    text-align: right;
+    margin: 0;
+    display: inline
+}
+
+.dropped p {
+    display: inline
+}
+
+.droppable {
+    width: 150px;
+    height: 150px;
+    padding: .5em;
+    margin: auto;
+    float: left;
+    margin: 10px;
+    border: 1px solid black
+}
+
+.colors, .tools {
+    position: absolute;
+    background: white;
+    padding: 5px;
+    top: 30%
+}
+
+.tools {
+    left: 0;
+    border-radius: 0 12px 12px 0;
+    padding-left: 8px
+}
+
+.colors {
+    right: 0;
+    border-radius: 12px 0 0 12px;
+    padding-right: 8px
+}
+
+.colors a, .tools a {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 5px
+}
+
+.size, .tone {
+    border: 1px solid #eee
+}
+
+.markerButton {
+    background: url('img/brush.png');
+    background-repeat: no-repeat
+}
+
+.eraserButton {
+    background: url('img/eraser.png');
+    background-repeat: no-repeat
+}
+
+.active-color, .active-tool {
+    border: 1px solid #ddd
+}
+
+.inactive-color, .inactive-tool {
+    border: 1px solid #eee
+}
+
+.active-tool {
+    background-color: #ddd
+}
+
+.canvas-disegno {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    cursor: url("img/brush.png"), auto;
+    box-shadow: 0 0 3px -1px rgba(0, 0, 0, .7), 0 5px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid white
+}
+
+.colora-disegno {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden
+}
+
+.frase {
+    display: block
+}
+
+@font-face {
+    font-family: "crimson";
+    src: url(fonts/CrimsonText-Roman.ttf)
+}
+
+.clear-fix {
+    clear: both
+}
+
+.rosso {
+    color: red
+}
+
+.blu {
+    color: #00f
+}
+
+.scritta-capitello {
+    font-family: crimson;
+    position: absolute;
+    bottom: -50px;
+    color: #fff;
+    text-align: center;
+    width: 100%
+}
+
+.sub-title {
+    border-radius: 16px;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    position: absolute;
+    padding-top: 12px
+}
+
+#container, .container {
+    /*background: #eee;*/
+    /*border-radius: 20px;*/
+    /*border: 3px solid white;*/
+    width: 100%;
+    min-height: 680px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0
+}
+
+.page {
+    width: 999px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 100%;
+    margin: 60px auto;
+    display: none
+}
+
+#page1 {
+    display: inline
+}
+
+div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff
+}
+
+/*.floater {
+    float: left;
+    height: 50%;
+    width: 100%;
+    margin-bottom: -300px
+}*/
+
+.floater {
+    float: left;
+    height: 100px;
+    width: 100%;
+}
+
+.centered-txt,  {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    position: absolute;
+}
+
+.centered-img {
+    height: 100%;
+    width: 50%;
+    margin-left: 240px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    position: absolute;
+}
+
+.centered-txt, .centered-img, #stage {
+    clear: both
+}
+
+.centered-txt {
+    width: 72%;
+    font-size: 24px;
+    padding-left: 28%;
+    padding-top: 5%;
+    line-height: 170%
+}
+
+#tl, #tr, #bl, #br {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+
+#tl img, #tr img, #bl img, #br img {
+    vertical-align: middle
+}
+
+.audiobutton {
+    display: inline-block;
+    width: 80px;
+    height: 55px;
+    background-image: url("img/audio.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    cursor: pointer;
+}
+
+.lettera {
+    border: 1px solid white;
+    cursor: pointer;
+    background: white
+}
+
+.sillaba {
+    width: 200px !important
+}
+
+.avanti, .indietro {
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    cursor: pointer;
+}
+
+.avanti {
+    background-image: url("img/avanti.png");
+
+}
+
+.indietro {
+    background-image: url("img/indietro.png");
+}
+
+.btn-disabled{
+    opacity: 0.5!important;
+    pointer-events: none;
+}
+
+.menu-list {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    min-height: 30px;
+    font-size: 32px;
+    padding: 8px;
+    font-weight: bold;
+    color: #333;
+    overflow: visible
+}
+
+.title-image {
+    display: inline-block;
+    position: absolute;
+    width: 250px;
+    -webkit-transform: scale(.5, .5);
+    -moz-transform: scale(.5, .5);
+    -ms-transform: scale(.5, .5);
+    -o-transform: scale(.5, .5);
+    transform: scale(.5, .5);
+    top: -138px;
+    right: -114px;
+    height: 250px;
+    border-radius: 180px;
+    background: #FFF;
+    padding: 30pt
+}
+
+.menu-list {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #111
+}
+
+#tr {
+    top: 9%;
+    right: 6%
+}
+
+#tl {
+    top: 9%;
+    left: 6%
+}
+
+#bl {
+    bottom: 9%;
+    left: 6%
+}
+
+#br {
+    bottom: 9%;
+    right: 6%
+}
+
+.volumeShadow {
+    box-shadow: none;
+    /*box-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2)*/
+}
+
+/*.volumeShadow:before{*/
+/*content: "";*/
+/*z-index: -1;*/
+/*position: absolute;*/
+/*width: 50%;*/
+/*top: 160px;*/
+/*bottom: 15px;*/
+/*left: 15px;*/
+/*-webkit-transform: rotate(-2deg);*/
+/*transform: rotate(-2deg);*/
+/*box-shadow: 0px 15px 10px #3C3C3C;*/
+/*}*/
+/*.volumeShadow:after{*/
+/*content: "";*/
+/*z-index: -1;*/
+/*position: absolute;*/
+/*width: 50%;*/
+/*top: 160px;*/
+/*right: 15px;*/
+/*bottom: 15px;*/
+/*-webkit-transform: rotate(2deg);*/
+/*transform: rotate(2deg);*/
+/*box-shadow: 0px 15px 10px #3C3C3C;*/
+/*}*/
+
+/*.volumeShadowPressed {
+    bottom: 5px;
+    box-shadow: 0 1px 0 #ccc, 0 2px 0 #bbb, 0 3px 0 #aaa, 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2)
+}*/
+
+/*.noShadow {
+    box-shadow: 0 6px 0 0 #bbb
+}*/
+
+.table-bordered {
+    border-collapse: separate;
+    border-left: 0
+}
+
+.table-bordered th, .table-bordered td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top
+}
+
+#log {
+    display: none
+}
+
+.title {
+    position: relative;
+    padding: 10pt;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 27px;
+    top: 45pt;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #333;
+    overflow: visible;
+    width: 700px;
+    min-height: 30px;
+    margin: 0 auto;
+}
+
+html {
+    background: transparent
+}
+
+body {
+    background-color: #fffdea;
+    background: linear-gradient(#fffdea, #dfbfb0);
+}
+
+.container {
+    border-radius: 0
+}
+
+.page {
+    margin: 0 auto;
+}
+
+.page-container {
+    background-image: url("img/container-colored.png");
+    background-size: 100% 100%;
+}
+
+.navigation-container {
+    position: absolute;
+    margin-left: -105px;
+    bottom: 40px;
+    left: 50%;
+    height: 60px;
+    width: 210px;
+    text-align: center;
+    background-image: url(img/navigator.png);
+    z-index: 1;
+}
+
+.subtitle {
+    text-align: center;
+    position: absolute;
+    padding: 10pt;
+    font-size: 20px;
+    left: 50%;
+    margin-left: -350px;
+    width: 680px;
+    top: 90pt;
+}
+
+.draggable-fraction {
+    padding: 0;
+    margin: 25px;
+    min-width: 50px;
+    height: 100px;
+    background: 0
+}
+
+.draggable-label, .draggable-text {
+    padding: 0;
+    margin: 15px;
+    min-width: 180px;
+    max-height: 50px;
+    min-height: 50px;
+    background: 0
+}
+
+.draggable-label {
+    font-size: 18px;
+    background: #fff;
+    max-height: none;
+    margin: 5px;
+    display: inline-block;
+    float: none
+}
+
+.draggable.medium {
+    min-width: 130px;
+    padding: 0 8pt 0 8pt
+}
+
+.draggable-img-small {
+    padding: 0;
+    margin: 12px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+    background: 0
+}
+
+.droppable-fraction {
+    width: 50px;
+    height: 100px
+}
+
+.droppable-text {
+    width: 180px;
+    height: 50px
+}
+
+.dropimg-small {
+    width: 80px;
+    height: 80px
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotating {
+    from {
+        -moz-transform: rotate(360deg)
+    }
+    to {
+        -moz-transform: rotate(0)
+    }
+}
+
+@-ms-keyframes rotating {
+    from {
+        -ms-transform: rotate(360deg)
+    }
+    to {
+        -ms-transform: rotate(0)
+    }
+}
+
+@-o-keyframes rotating {
+    from {
+        -o-transform: rotate(360deg)
+    }
+    to {
+        -o-transform: rotate(0)
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite
+}
+
+.no-flick {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden
+}
+
+.draggable-wrapper {
+    display: inline-block;
+    width: 150px
+}
+
+.fraction-wrapper {
+    display: inline-block;
+    width: 95px
+}
+
+.money-wrapper {
+    display: inline-block;
+    width: 200px
+}
+
+.card {
+    width: 220px
+}
+
+.shape-wrapper {
+    display: inline-block;
+    width: 100px;
+    height: 100px
+}
+
+.autocorrective {
+    overflow: hidden;
+    display: inline-block
+}
+
+.autocorrective-disabled {
+    opacity: .5
+}
+
+.cerchia {
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cerchia-correct {
+    opacity: 1;
+    transition: opacity 2s linear
+}
+
+.cerchia-hidden {
+    opacity: 0
+}
+
+.moneycount {
+    overflow: hidden;
+    display: inline-block
+}
+
+.moneycount-disabled {
+    opacity: .5
+}
+
+.draggable-plumb {
+    margin: 37px 20px;
+    display: inline-block;
+    cursor: pointer
+}
+
+.droppable-plumb {
+    border: 1px solid
+}
+
+.button {
+    border: 1px solid darkblue;
+    background-color: rgba(201, 201, 201, 0.51);
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+    padding-top: 5px
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(186, 186, 186, 0.51)
+}
+
+.button:active {
+    background-color: rgba(143, 143, 143, 0.51)
+}
+
+.truefalse {
+    width: 330px;
+    height: 50px;
+    margin-bottom: 10px
+}
+
+.truefalse.long {
+    width: 700px
+}
+
+.textfrase {
+    font-size: 18pt;
+    display: inline-block;
+    float: left;
+    margin-top: 7px
+}
+
+.buttons {
+    display: inline-block;
+    margin-left: 30px
+}
+
+.goRight {
+    float: right
+}
+
+.botline {
+    border-bottom: 1px solid black
+}
+
+.draggable-label-box {
+    background-color: white;
+    border: 1px solid black;
+    padding: 0;
+    font-family: Arial Black;
+    border-radius: 4px;
+    font-size: 30px;
+    color: #00598b
+}
+
+.fix-label-box {
+    background-color: white;
+    border: 1px solid black;
+    padding: 0;
+    width: 250px;
+    font-family: Arial Black;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #00598b;
+    margin: 12px
+}
+
+.fix-label-box.plumb {
+    font-size: 25px;
+    width: 420px
+}
+
+.draggable-label-box.small {
+    width: 80px;
+    height: 80px;
+    margin: 12px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+    line-height: 75px
+}
+
+.draggable-label-box.medium {
+    width: 175px;
+    height: 50px;
+    line-height: 45px;
+    margin: 15px;
+    min-width: 175px;
+    max-height: 45px;
+    min-height: 45px;
+    border-radius: 8px;
+    font-size: 30px
+}
+
+.draggable-label-box.medium.coins {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 160px;
+    max-height: 45px;
+    min-height: 45px;
+    font-size: 20pt
+}
+
+.draggable-label-box.cards {
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 170px;
+    max-height: 45px;
+    min-height: 45px;
+    font-size: 20pt;
+    border-radius: 8px
+}
+
+.draggable-label-box.medium.table {
+    width: 135px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 135px;
+    max-height: 45px;
+    min-height: 45px;
+    font-size: 20pt
+}
+
+.draggable-label-box.medium.table.large {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px
+}
+
+.draggable-label-box.medium.row {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 100px;
+    max-height: 45px;
+    min-height: 45px;
+    font-size: 20pt;
+    border: 2px solid #00598b
+}
+
+
+.draggable-label-box.medium.custom.row {
+    height: 70px;
+    line-height: 25px;
+    max-height: 70px;
+    min-height: 70px;
+    padding-top: 10px;
+    background-size: contain;
+    display: block;
+    float: left
+}
+
+.draggable-label-box.medium.custom.big.row {
+    width: 210px;
+    margin: 15px 10px 15px 10px
+}
+
+.draggable-label-box.medium.custom.row.single {
+    line-height: 55px
+}
+
+.draggable-label-box.medium-small {
+    width: 100px;
+    height: 50px;
+    line-height: 30px;
+    min-width: 100px;
+    max-height: 30px;
+    min-height: 30px;
+    font-size: 20px !important;
+    margin: 0 !important
+}
+
+.draggable-label-box.littleNumber {
+    width: 100px;
+    height: 50px;
+    min-width: 100px;
+    max-height: 50px;
+    min-height: 50px;
+    font-size: 37px;
+    line-height: 45px;
+    border-radius: 8px
+}
+
+.draggable-label-box.plumb {
+    width: 110px;
+    height: 38px;
+    line-height: 40px;
+    min-width: 110px;
+    max-height: 38px;
+    min-height: 38px;
+    font-size: 25px !important
+}
+
+.droppable-label-box {
+    font-family: Arial Black;
+    color: #00598b;
+    font-size: 30px;
+    border: 1px dashed #00b3ec;
+    display: inline-block;
+    border-radius: 8px
+}
+
+.droppable-label-box.medium {
+    width: 210px;
+    height: 50px;
+    line-height: 50px;
+    min-width: 210px;
+    max-height: 50px;
+    min-height: 50px;
+    border: 1px dashed #00b3ec;
+    display: inline-block;
+    border-radius: 8px
+}
+
+.droppable-label-box.cards {
+    width: 180px;
+    min-width: 180px !important;
+    height: 50px;
+    line-height: 50px;
+    min-width: 210px;
+    max-height: 50px;
+    min-height: 50px;
+    border-radius: 8px;
+    font-size: 20pt
+}
+
+.droppable-label-box.medium.coins {
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+    min-width: 190px;
+    max-height: 50px;
+    min-height: 50px;
+    font-size: 20pt
+}
+
+.droppable-label-box.medium.table {
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    min-width: 160px;
+    max-height: 50px;
+    min-height: 50px;
+    font-size: 20pt
+}
+
+.droppable-label-box.medium.table.large {
+    width: 180px
+}
+
+.droppable-label-box.medium.custom {
+    width: 210px;
+    height: 60px;
+    line-height: 23px;
+    min-width: 210px;
+    max-height: 60px;
+    min-height: 60px;
+    border: 1px dashed #ec9816;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #090d5d
+}
+
+.droppable-label-box.medium-small {
+    width: 102px;
+    height: 32px;
+    line-height: 30px;
+    min-width: 104px;
+    max-height: 34px;
+    min-height: 34px;
+    border: 1px dashed #00b3ec;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 20px !important
+}
+
+.droppable-label-box.littleNumber {
+    width: 110px;
+    height: 60px;
+    font-size: 37px;
+    line-height: 60px;
+    text-align: center
+}
+
+.droppable-label-box.small {
+    border: 1px dashed #00b3ec;
+    display: inline-block;
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+    line-height: 75px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px
+}
+
+.abaco {
+    width: 310px
+}
+
+.littleAbaco {
+    width: 120px
+}
+
+.littleAbacoWrapper {
+    width: 190px;
+    height: 60px
+}
+
+.money-wrapper.along {
+    display: inline-block;
+    width: 250px
+}
+
+.table-wrapper {
+    display: inline-block;
+    width: 114px;
+    height: 30px;
+    margin: 4px
+}
+
+.plumb-wrapper {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin: 5px
+}
+
+.table-wrapper.drop {
+    display: inline-block;
+    width: 114px;
+    height: 34px;
+    margin: 4px
+}
+
+.table-wrapper.big {
+    display: inline-block;
+    width: 210px;
+    height: 60px;
+    margin: 24px
+}
+
+.table-wrapper.custombtn {
+    display: inline-block;
+    width: 230px;
+    height: 80px;
+    margin: 0
+}
+
+.dropimg {
+    box-sizing: border-box
+}
+
+.arrow {
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin: 9px
+}
+
+.draggable-fraction, .droppable-fraction {
+    margin: 0;
+    padding: 0 4px;
+    border: 2px solid;
+    font-size: 37px;
+    line-height: 30px;
+    font-weight: bold
+}
+
+.upper-fraction, .lower-fraction {
+    padding: 2px 0;
+    min-width: 30px;
+    margin: 0 Auto
+}
+
+.upper-fraction {
+    margin-top: 13px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid
+}
+
+.lower-fraction {
+    padding-top: 5px
+}
+
+.draggable-fraction {
+    margin: 0;
+    padding: 0 4px;
+    border: 2px solid;
+    font-size: 37px;
+    line-height: 30px;
+    font-weight: bold
+}
+
+.droppable-fraction {
+    margin: 0;
+    padding: 0 4px;
+    border: 2px solid;
+    font-size: 37px;
+    line-height: 30px;
+    font-weight: bold;
+    width: 68px;
+    height: 108px
+}
+
+.upper-fraction, .lower-fraction {
+    padding: 2px 0;
+    min-width: 30px;
+    margin: 0 Auto
+}
+
+.upper-fraction {
+    margin-top: 13px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid
+}
+
+.lower-fraction {
+    padding-top: 5px
+}
+
+.imgContainer.big {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px
+}
+
+.noContainer {
+    height: 100px;
+    margin: 10px
+}
+
+.text {
+    font-size: 16pt;
+    font-weight: bold
+}
+
+.leftwrapper {
+    width: 230px;
+    height: 53px !important
+}
+
+.roundImgContainer {
+    display: inline-block;
+    width: 190px
+}
+
+.numberWrapper {
+    width: 70px;
+    height: 70px;
+    display: inline-block
+}
+
+.number {
+    font-size: 35px;
+    font-weight: bold;
+    color: #791041;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    padding: 5px;
+    line-height: 50px
+}
+
+.number.ui-draggable {
+    box-shadow: none !important;
+    background: transparent !important
+}
+
+.dropimg.dotted.dots.ui-droppable.ui-droppable-disabled.ui-state-disabled {
+    font-size: 35px;
+    font-weight: bold;
+    color: #791041;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    padding-top: 15px
+}
+
+.dots.right {
+    float: right
+}
+
+.dropimg.dotted {
+    border: hidden
+}
+
+.euro1 {
+    display: block;
+    position: relative;
+    width: 90px;
+    height: 90px
+}
+
+.euro2 {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px
+}
+
+.euro5 {
+    display: block;
+    position: relative;
+    width: 256px;
+    height: 132px
+}
+
+.euro10 {
+    display: block;
+    position: relative;
+    width: 302px;
+    height: 160px
+}
+
+.euro10pos {
+    top: -1337px;
+    right: -620px
+}
+
+.euro5pos {
+    top: -1025px;
+    right: -646px
+}
+
+.euro2pos {
+    top: -538px;
+    right: -467px
+}
+
+.euro2pos2 {
+    top: -536px;
+    right: -376px
+}
+
+.euro2pos3 {
+    top: -720px;
+    right: -76px
+}
+
+.euro2pos4 {
+    top: -768px;
+    right: -779px
+}
+
+.euro1pos {
+    top: -382px;
+    right: -650px
+}
+
+.euro1pos1 {
+    top: -232px;
+    right: -470px
+}
+
+.euro1pos2 {
+    top: -200px;
+    right: -480px
+}
+
+.euro1pos3 {
+    top: -100px;
+    right: -220px
+}
+
+.euro1pos4 {
+    top: -264px;
+    right: -317px
+}
+
+.euro1pos5 {
+    top: -250px;
+    right: -530px
+}
+
+.bottom {
+    font-size: 12pt;
+    position: relative;
+    top: -1003px;
+    right: 0;
+    text-align: center
+}
+
+.circle {
+    opacity: 0;
+    transition: opacity 1.5s linear
+}
+
+.correct {
+    opacity: 1
+}
+
+.brushes {
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 210px;
+    left: 33px;
+    box-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2)
+}
+
+.underline-brush, .brush {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 6px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    opacity: .6
+}
+
+.underline-brush[data-color="blue"] {
+    background: #00f
+}
+
+.underline-brush[data-color="red"] {
+    background-color: red
+}
+
+.underline-brush[data-color="deeppink"] {
+    background-color: deeppink
+}
+
+.underline-brush[data-color="green"] {
+    background-color: green
+}
+
+.underline-brush[data-color="yellow"] {
+    background-color: yellow
+}
+
+.underline-brush[data-color="orange"] {
+    background-color: orange
+}
+
+.underline-brush.brush-selected {
+    opacity: 1;
+    border: 3px solid #000
+}
+
+.underline-text-correct {
+    border-radius: 5px;
+    padding: 0 2px
+}
+
+.brush {
+    background-image: url("img/brush.png");
+    opacity: 1;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.puzzle-start {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -65px;
+    width: 100px;
+    line-height: 20px;
+    margin-top: 10px;
+    box-shadow: 0 1px 0 #1db715,0 2px 0 #1db715,0 3px 0 #1db715,0 4px 0 #1db715,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 2px 15px 5px rgba(0, 0, 0, 0.4);
+    padding: 10px 15px;
+    background-color: #6DFF66;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.retry{
+    cursor: pointer;
+    position: absolute;
+    right: 69px;
+    top: 60px;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-image: url('img/retry.png');
+    background-size: contain;
+}
+
+.tile-puzzle {
+    cursor: move;
+    background-color: #ffffff;
+}
+
+/* BUTTON LABEL BLOCK */
+
+.button-label{
+    background: white!important;
+    border: 3px solid white;
+    border-radius: 10px;
+    font-size: 23px;
+    box-shadow: 0 2px 4px #999;
+    width: 120px;
+    margin: 15px 3px;
+    padding: 10px 0;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* BUTTON LABEL BLOCK */
+
+.button-label.inline{
+    display: inline-block;
+}
+
+/* REORDER IMAGE LABELS */
+
+.label {
+    font-size: 23px;
+    width: 140px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background: white;
+    min-width: 35px;
+    padding: 0;
+    margin: 0 60px;
+    box-shadow: 0 2px 4px #999;
+    line-height: 50px;
+    display: inline-block;
+    cursor: default;
+}
+
+/* BOLD TEXT INLINE DROPIMG RELEASED */
+
+.droppable-text-inline.ui-droppable.ui-droppable-disabled {
+    font-weight: bold;
+}
+
+
+
+.droppable-plumb.label, .draggable-plumb.label {
+    border: none;
+}

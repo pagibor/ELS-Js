@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8"/>
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+    <script type="text/javascript" src="js/vendor/minified/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/vendor/minified/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="js/vendor/minified/jquery.ui.touch-punch.js"></script>
+    <script type="text/javascript" src="js/vendor/minified/TweenLite.min.js"></script>
+    <script type="text/javascript" src="js/vendor/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/vendor/minified/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="js/vendor/minified/SplitText.min.js"></script>
+
+    <script type="text/javascript" src="js/data/CE--CIE-e-GE--GIE.js"></script>
+
+    <script type="text/javascript" src="js/deploy.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/style-scuola-brescia.css">
+
+    <style>
+
+        .centered {
+            width: 780px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 155px;
+        }
+
+        .draggable-infinite {
+            margin: 0;
+        }
+
+        .wrapper {
+            display: inline-block;
+            width: 70px;
+            height: 50px;
+            margin: 0 15px;
+        }
+
+        .draggable-infinite {
+            display: block !important;
+            box-shadow: 0 2px 4px #999999 !important;
+            margin: 0;
+        }
+
+        .draggable-infinite.medium {
+            font-size: 25px;
+            height: 50px;
+            min-height: 40px;
+            line-height: 50px;
+            width: 70px;
+            min-width: 70px;
+            padding: 0;
+            text-transform: uppercase;
+        }
+
+        .centered-answers {
+            width: 760px;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+
+        .dropimg.droppable-text-inline.ui-state-disabled {
+            padding:0;
+            text-transform: none;
+        }
+
+        .dropimg.droppable-text-inline {
+            display: inline;
+            border: 0;
+        }
+
+        .drop-text-container {
+            font-size: 22px;
+            line-height: 38px;
+            text-align: left;
+        }
+
+        .drop-text-container ul {
+            margin: 0;
+            padding: 0 0 0 20px;
+        }
+
+        .drop-text-container img {
+            float: right;
+        }
+
+        img {
+            pointer-events: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container volumeShadow" id="template-container">
+
+    <div class="exercise-template" theme-name="la-scuola">
+
+        <div class="centered">
+
+            <div class="centered-answers">
+                <div class="wrapper"><div class="draggable-infinite medium" data-label="1-1">ce</div></div>
+                <div class="wrapper"><div class="draggable-infinite medium" data-label="1-2">cie</div></div>
+                <div class="wrapper"><div class="draggable-infinite medium" data-label="1-3">ge</div></div>
+                <div class="wrapper"><div class="draggable-infinite medium" data-label="1-4">gie</div></div>
+            </div>
+
+            <div class="drop-text-container">
+                <img src="img/CE--CIE-e-GE--GIE/sfondo.jpg">
+                <ul>
+                    <li>La maestra mi ha dato suffi<div class="dropimg droppable-text-inline"  data-accept="1-2">.....</div>nte perché mi sono impegnata poco.</li>
+                    <li>Paolo è davvero un <div class="dropimg droppable-text-inline"  data-accept="1-3">.....</div>nio: sa tutto!</li>
+                    <li>Le cami<div class="dropimg droppable-text-inline"  data-accept="1-2">.....</div> sono difficili da stirare.</li>
+                    <li>I miei <div class="dropimg droppable-text-inline"  data-accept="1-3">.....</div>nitori hanno ritirato la pa<div class="dropimg droppable-text-inline"  data-accept="1-3">.....</div>lla.</li>
+                    <li>Papà ha caricato le vali<div class="dropimg droppable-text-inline" data-accept="1-4">.....</div> in macchina.</li>
+                    <li>Ho corso forte perciò ho le guan<div class="dropimg droppable-text-inline"  data-accept="1-1">.....</div> rosse.</li>
+                    <li>La carta va nel <div class="dropimg droppable-text-inline"  data-accept="1-1">.....</div>stino, non in terra.</li>
+                    <li>Non è i<div class="dropimg droppable-text-inline"  data-accept="1-4">.....</div>nico mangiare con le mani sporche.</li>
+                    <li>In autunno ci sono state piog<div class="dropimg droppable-text-inline"  data-accept="1-3">.....</div> molto intense.</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
